@@ -4,7 +4,7 @@ const User = require("../models/userSchema");
 require("dotenv").config();
 
 const MONGO_URI =
-  process.env.MONGO_URI || "mongodb://localhost:27017/yourdbname";
+  process.env.MONGO_URI || "mongodb://localhost:27017/QRAppDB";
 
 async function createAdmin() {
   try {
