@@ -50,6 +50,21 @@ frontend/  # React, Vite, Tailwind CSS
    npm run dev
    ```
 
+
+## Environment Variables
+
+Create a `.env` file in the root of the backend folder:
+
+```
+PORT=5000
+MONGODB_URI=mongodb://127.0.0.1:27017/QRcodeDB
+JWT_SECRET=your_jwt_secret_key
+```
+
+- `PORT` — the port your Express server runs on
+- `MONGODB_URI` — your MongoDB connection string (local or Atlas)
+- `JWT_SECRET` — any secret string used to sign and verify JWT tokens, keep this private
+
 ## Scripts
 
 - `backend/scripts/seedUsers.js` — Seed default users
